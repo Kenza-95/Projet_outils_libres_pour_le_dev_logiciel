@@ -1,1 +1,1 @@
-# covid_project
+# web_app_pyt_react_heroku
