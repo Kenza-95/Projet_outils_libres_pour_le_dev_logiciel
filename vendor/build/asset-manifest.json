@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.31a4c71c.chunk.css",
-    "main.js": "/static/js/main.d3094cd8.chunk.js",
-    "main.js.map": "/static/js/main.d3094cd8.chunk.js.map",
+    "main.css": "/static/css/main.27ce60c1.chunk.css",
+    "main.js": "/static/js/main.3155416a.chunk.js",
+    "main.js.map": "/static/js/main.3155416a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.396ebf91.js",
     "runtime-main.js.map": "/static/js/runtime-main.396ebf91.js.map",
-    "static/css/2.3afd4551.chunk.css": "/static/css/2.3afd4551.chunk.css",
-    "static/js/2.de0f2e04.chunk.js": "/static/js/2.de0f2e04.chunk.js",
-    "static/js/2.de0f2e04.chunk.js.map": "/static/js/2.de0f2e04.chunk.js.map",
+    "static/css/2.0c9a4586.chunk.css": "/static/css/2.0c9a4586.chunk.css",
+    "static/js/2.b722a4cd.chunk.js": "/static/js/2.b722a4cd.chunk.js",
+    "static/js/2.b722a4cd.chunk.js.map": "/static/js/2.b722a4cd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0d6a8841aeef93b8b1399c219181701e.js": "/precache-manifest.0d6a8841aeef93b8b1399c219181701e.js",
+    "precache-manifest.cec153fd72941a505c7a2a57bc1505e5.js": "/precache-manifest.cec153fd72941a505c7a2a57bc1505e5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.3afd4551.chunk.css.map": "/static/css/2.3afd4551.chunk.css.map",
-    "static/css/main.31a4c71c.chunk.css.map": "/static/css/main.31a4c71c.chunk.css.map",
-    "static/js/2.de0f2e04.chunk.js.LICENSE.txt": "/static/js/2.de0f2e04.chunk.js.LICENSE.txt",
+    "static/css/2.0c9a4586.chunk.css.map": "/static/css/2.0c9a4586.chunk.css.map",
+    "static/css/main.27ce60c1.chunk.css.map": "/static/css/main.27ce60c1.chunk.css.map",
+    "static/js/2.b722a4cd.chunk.js.LICENSE.txt": "/static/js/2.b722a4cd.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/home.scss": "/static/media/bg.74aaeeb9.jpg",
+    "static/media/c.gif": "/static/media/c.b9ba86bb.gif",
+    "static/media/chat.scss": "/static/media/cover.6ffde3ce.jpg",
     "static/media/index.css": "/static/media/covid.6a1d8553.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.396ebf91.js",
-    "static/css/2.3afd4551.chunk.css",
-    "static/js/2.de0f2e04.chunk.js",
-    "static/css/main.31a4c71c.chunk.css",
-    "static/js/main.d3094cd8.chunk.js"
+    "static/css/2.0c9a4586.chunk.css",
+    "static/js/2.b722a4cd.chunk.js",
+    "static/css/main.27ce60c1.chunk.css",
+    "static/js/main.3155416a.chunk.js"
   ]
 }
