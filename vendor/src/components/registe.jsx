@@ -1,7 +1,6 @@
 
 import 'mdbreact/dist/css/mdb.css';
-import '../styles/chat.scss'
-import '../styles/home.scss'
+import '../styles/chat.css'
 
 import React, {Component} from "react";
 import { Redirect } from 'react-router-dom'
@@ -19,7 +18,6 @@ export class Auth extends Component {
                 password : '',
                 tel : '',
                 adress : '',
-                symptomes:[]
             }
             this.data= {
               redirect : false
@@ -46,27 +44,12 @@ export class Auth extends Component {
 
     }
 
-    async add_symp(key, value){
-
-          var index = -1
-          index = await this.state.symptomes.indexOf(value); // Let's say it's Bob
-          if (index != -1){
-              this.setState({
-                    symptomes : this.state.symptomes.splice(index, 1)
-              })
-          }
-          else{
-
-              this.setState({
-                    symptomes : this.state.symptomes.concat(value)
-              })
-          }
-
-    }
-
   render() {
+    if (this.props.data.redirect) {
+      return <Redirect to='/login'/>;
+    }
     return (
-      <div className="builder-v2">
+      <div className="builder">
           <MDBContainer>
             <MDBRow>
               <MDBCol md="4">
@@ -170,57 +153,7 @@ export class Auth extends Component {
                               })
                           }}
                         />
-
-                                <div class="custom-control custom-checkbox checkk">
-                                  <div class="choice">
-                                    <input type="checkbox" class="custom-control-input" id="Fièvre"
-                                    onChange={(e) => {
-                                        console.log("e.checked")
-                                        console.log(e.checked)
-                                        this.add_symp(1, 'Fièvre')
-                                    }} />
-                                    <label class="custom-control-label" for="Fièvre">Fièvre</label><br />
-                                  </div>
-                                  <div class="choice">
-                                    <input type="checkbox" class="custom-control-input" id="Mal_de_tete"
-                                    onChange={(e) => {
-                                        this.add_symp(2, 'Mal de tête')
-                                    }} />
-                                    <label class="custom-control-label" for="Mal_de_tete">Mal de tête</label><br />
-                                  </div>
-                                  <div class="choice">
-                                    <input type="checkbox" class="custom-control-input" id="Courbature"
-                                    onChange={(e) => {
-                                        this.add_symp(3, 'Courbature')
-                                    }} />
-                                    <label class="custom-control-label" for="Courbature">Courbature</label><br />
-                                  </div>
-                                  <div class="choice">
-                                    <input type="checkbox" class="custom-control-input" id="Fatigue"
-                                    onChange={(e) => {
-                                        this.add_symp(4, 'Fatigue')
-                                    }} />
-                                    <label class="custom-control-label" for="Fatigue">Fatigue</label><br />
-                                  </div>
-                                  <div class="choice">
-                                    <input type="checkbox" class="custom-control-input" id="Perte_de_gout"
-                                    onChange={(e) => {
-                                        this.add_symp(5, 'Perte de goût')
-                                    }} />
-                                    <label class="custom-control-label" for="Perte_de_gout">Perte de goût</label><br />
-                                  </div>
-                                  <div class="choice">
-                                    <input type="checkbox" class="custom-control-input" id="Perte_d_odorat"
-                                    onChange={(e) => {
-                                        this.add_symp(4, 'Perte odorat')
-                                    }} />
-                                    <label class="custom-control-label" for="Perte_d_odorat">Perte d'odorat</label><br />
-                                  </div>
-
-                              </div>
                       </div>
-                      <br/>
-                      <br/>
                       <div className="text-center py-4 mt-3">
                         <MDBBtn color="cyan" onClick={(e) => {
                           e.preventDefault()

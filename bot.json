@@ -1,9 +1,11 @@
 
 [
     {"tag": "greeting",
-    "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-    "responses": ["Hello, hope your're doing fine, how can I help you?"],
-    "context": []
+"patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day","Good evening", "Who are you?", "What is your name?", "Where are you from?", "How do you manage to jump?", "Who developed you?", "They're Do you call their students? "," Do you work 24 hours? "," Is everything you say true? "," Have a nice day "],
+"responses": ["Hello, hope your're doing fine, how can I help you?, ","Good evening", "I am your robot doctor", "My name is robot doctor", "A robot machine", "Bah, Thanks to the developers", "It's the students of master's degree in nursing in Paris8", "Arab youcef, Achour lila, Bessaci kenza, Aoudene syphax", "It's my job", "Well yes! There's a whole study behind", "Good day"],
+"context": []
+
+
     },
     {"tag": "goodbye",
     "patterns": ["Bye", "See you later", "Goodbye"],
@@ -11,9 +13,11 @@
     "context": []
     },
     {"tag": "thanks",
-    "patterns": ["Thanks", "Thank you", "That's helpful"],
-    "responses": ["Happy to help!", "Any time!", "My pleasure"],
-    "context": []
+"patterns": ["Thanks", "Thank you", "That's helpful","You are nice", "Thank you tomorrow", "It's a pleasure to talk to a robot", "You are adorable", "Thank you for your help", "Thank you for your answer"],
+"responses": ["Happy to help!", "Any time!", "My pleasure","Well yes, I'm here for you", "Goodbye, see you tomorrow", "Thank you, I'm here for that", "Thank you", "Please", "You're welcome"],
+"context": []
+
+
     },
     {"tag": "time",
     "patterns": ["What time is it?", "time ?", "time" ],
@@ -37,9 +41,10 @@
     "context": []
     },
     {"tag": "KenzaBESSACI",
-    "patterns": ["Who is Kenza BESSACI ?", "Kenza ?", "BESSACI Kenza ?", "Who is BESSACI Kenza ?"],
-    "responses": ["la panda ? you know her ? she always likes to sleep like a holly panda - here is her github : ------ "],
-    "context": []
+"patterns": ["Kenza BESSACI", "Who is kenza bessaci?", "It was kenza bessaci who developed you?", "How old is she?", "Where does she come from", "She is still in Algeria ? "," She only used tools to develop you? "," Kenza bessaci she knows nothing in medicine? "," Kenza Bessaci lives where? "," To develop you she has to interview several doctors? ", "Kenza bessaci has a github? "],
+"responses": ["Yes", "kenza bessaci student in master 1 in Computer science at Paris 8", "Yes with her classmates", "She is so young 25 years old!", "She comes from Algeria", "No now she is in France "," She used the python language "," No she's not a doctor "," Sorry, it's personal "," Yes, she interviewed several doctors ","Yes her github is: https://github.com/Kenza-95"],
+"context": [],
+
     },
     {"tag": "LILA",
     "patterns": ["Who is Lila ACHOUR ?", "Lila ?", "ACHOUR Lila ?", "Who is ACHOUR Lila ?"],
@@ -57,9 +62,11 @@
     "context": ["fever"]
     },
     {"tag": "fever",
-    "patterns": ["yes"],
-    "responses": ["okey, did you lost your sens of smell ?"],
-    "context": ["lost_sens"]
+"patterns": ["yes","Yes!", "Thanks to a thermometer", "40 °", "Yes sometimes", "No sweat", "No I couldn't I was too weak", "Since I woke up", "Yes but nothing has changed", "Yes", "I'm afraid of having the covid"],
+"responses": ["okey, did you lost your sens of smell ?", "Do you have a fever?", "How do you know it is a fever?", "How much is your temperature?", "Do you have chills?", "Do you have sweat?", " Did you take a cold shower to try to lower the temperature "," Since when you had a fever? "," Did you take any medicine? "," Are you afraid? "," But no, you shouldn't be afraid. scared even if you have the covid "],
+"context": ["lost_sens"]
+
+
     },
     {"tag": "fever",
     "patterns": ["no"],
@@ -87,9 +94,11 @@
     "context": []
     },
     {"tag": "howAreYou",
-    "patterns": ["how are you ?", " good ?" ],
-    "responses": ["fine thanks and you ?"],
-    "context": ["goodtoknow"]
+"patterns": ["how are you ?", " good ?", "Hi", "Hello", "Are you okay", "Good", "Are you well?", "Yes you're okay", "I'm okay", "Nice to meet you", "Nice to talk to you" ],
+"responses": ["fine thanks and you ?", "Hello", "Hi", "Yes well thank you and you?", "Good", "Thank you and you?", "Thank you and you", "I'm fine thank you", "Me too happy to meet you", " Thanks me too "],
+"context": ["goodtoknow"]
+
+
     },
     {"tag": "goodtoknow",
     "patterns": ["yes"],
@@ -100,5 +109,21 @@
     "patterns": ["no"],
     "responses": ["ah, what can i do to help you ?"],
     "context": []
+    },
+    {"tag": "covid",
+    "patterns": ["no","Covid", "What is covid?", "How do we know if we have covid?", "Whoever has covid is going to die?", "Is there a lot of death from covid?" , "How many cases of covid in the world?", "Can we cure covid?", "How many days does covid take?", "What is the cure for covid?"," Is there a covid drug? "],
+    "responses": ["ah, what can i do to help you ?", "Covid!", "Covid is a strong flu", "if you have a fever, loss of taste, loss of smell, headache", "No not necessarily do not worry", "Yes unfortunately "," Yes there is a map in the website "," Yes of course "," from 7 to 30 days "," Take honey, lemon, zinc, vitamin D", "hoping for soon"],
+    "context": []
+    },
+    {"tag": "map",
+    "patterns": ["In the site, do we have a map?", "A map?", "We find all the countries", "Why is there a map in the site?", "You created the map", " You have to create an account to view the map? "," Is the map up to date? "," Can we zoom in? "," The map is a good idea", "Thank you for all the information"],
+    "responses": ["Yes, do not look up", "Yes there is a map", "Yes", "To find out about the covid", "Yes our young developers", "Yes of course", "Yes of course", " Yes to help you "],
+    "context": []
     }
+
+
+
+
+
+
 ]

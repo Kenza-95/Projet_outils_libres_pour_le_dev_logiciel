@@ -1,6 +1,6 @@
 
 import 'mdbreact/dist/css/mdb.css';
-import '../styles/chat.scss'
+import '../styles/chat.css'
 
 import React, {Component} from "react";
 import { Redirect } from 'react-router-dom'
@@ -40,6 +40,12 @@ export class Auth extends Component {
     }
 
   render() {
+    if (this.props.data.redirect) {
+      return <Redirect to={{
+                pathname: "/"
+              }}
+      />      
+    }
     return (
       <div className="builder">
           <MDBContainer>
