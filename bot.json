@@ -7,10 +7,10 @@ Qui vous a développé? " , "Vous appelez leurs étudiants? " , " Travaillez-vous 2
 
 
     },
-    { " tag " : " au revoir " ,
-    " motifs " : [ "Au revoir " , "A plus tard " , " Au revoir " ],
-    " réponses " : [ "A plus tard, merci de votre visite " , " Bonne journée " , "Au revoir! Revenez bientôt. " ],
-    " contexte " : []
+    {"tag": "goodbye",
+    "patterns": ["Bye", "See you later", "Goodbye", "so long", "Bye-Bye", "See you later", "See you soon", "I must be going", "Have a good one", "Until next week"],
+    "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."],
+    "context": []
     },
     { " tag " : " merci " ,
 " patterns " : [ " Merci " , " Merci " , " C'est utile " , " Vous êtes gentil " , " Merci demain " , " C'est un plaisir de parler à un robot " , " Vous êtes adorable " , " Merci vous pour votre aide " , " Merci pour votre réponse " ],
@@ -157,5 +157,10 @@ Avez-vous pris des médicaments? " , "As tu peur? " , " Mais non, vous ne devriez
 " réponses " : [ " Je peux comprendre et parler anglais " , " Je parle anglais " ],
 " contexte " : []
 },
+    {"tag": "risks",
+    "patterns": ["I am scared", "I'm afraid it will get worse", "will there be any side effects", "it will influence my daiy"],
+    "responses": ["No,don't worry, we'll find you a solution"],
+    "context": []
+    }
 
 ]
